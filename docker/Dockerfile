@@ -5,7 +5,7 @@ RUN micromamba install -y -n base -f environment.yml && \
 USER root
 RUN mkdir /opt/pipeline
 ENV PATH="/opt/pipeline:$PATH"
-ADD ../my_first_notebook.sh /opt/pipeline/
+ADD ../First_notebook.sh /opt/pipeline/
 ADD ../Deseq2.r /opt/pipeline
 RUN chmod +x /opt/pipeline/my_first_notebook.sh
 USER $MAMBA_USER
