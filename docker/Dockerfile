@@ -7,5 +7,5 @@ RUN mkdir /opt/pipeline
 ENV PATH="/opt/pipeline:$PATH"
 ADD ../First_notebook.sh /opt/pipeline/
 ADD ../Deseq2.r /opt/pipeline
-RUN chmod +x /opt/pipeline/my_first_notebook.sh
+RUN chmod +x /opt/pipeline/First_notebook.sh
 USER $MAMBA_USER
